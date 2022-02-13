@@ -1,6 +1,6 @@
 {
   "name": "JLNetwork",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "A short description of JLNetwork.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/liuguoqiang/JLNetwork",
@@ -12,11 +12,16 @@
     "liuguoqiang": "liugq01@rd.netease.com"
   },
   "source": {
-    "git": "https://github.com/liuguoqiang/JLNetwork.git",
-    "tag": "0.1.0"
+    "git": "git@github.com:janstilau/JLNetwork.git",
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "JLNetwork/Classes/**/*"
+  "source_files": "JLNetwork/Classes/**/*",
+  "dependencies": {
+    "AFNetworking": [
+
+    ]
+  }
 }

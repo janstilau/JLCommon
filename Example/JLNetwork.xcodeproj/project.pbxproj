@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		208AFFE7611AB31C74974BFA /* Pods_JLNetwork_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JLNetwork_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		495BB525DA65B715874A26D3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		495BB525DA65B715874A26D3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4FBDC1B42669FAA46E157E27 /* Pods_JLNetwork_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JLNetwork_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* JLNetwork_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLNetwork_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,8 +43,8 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7EA53CBB3D5B8835A665129A /* Pods-JLNetwork_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLNetwork_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JLNetwork_Tests/Pods-JLNetwork_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		84B876213D221C0D82F0D97C /* Pods-JLNetwork_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLNetwork_Tests.release.xcconfig"; path = "Target Support Files/Pods-JLNetwork_Tests/Pods-JLNetwork_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		99A2A77474DD80A0EFA6996E /* JLNetwork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JLNetwork.podspec; path = ../JLNetwork.podspec; sourceTree = "<group>"; };
-		C24BACAA0B006B6702B2D92C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		99A2A77474DD80A0EFA6996E /* JLNetwork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JLNetwork.podspec; path = ../JLNetwork.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C24BACAA0B006B6702B2D92C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C55A338BA53A11EAFBF43D4E /* Pods-JLNetwork_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLNetwork_Example.debug.xcconfig"; path = "Target Support Files/Pods-JLNetwork_Example/Pods-JLNetwork_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E88461D978208D06BF30B089 /* Pods-JLNetwork_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLNetwork_Example.release.xcconfig"; path = "Target Support Files/Pods-JLNetwork_Example/Pods-JLNetwork_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,7 +156,6 @@
 				7EA53CBB3D5B8835A665129A /* Pods-JLNetwork_Tests.debug.xcconfig */,
 				84B876213D221C0D82F0D97C /* Pods-JLNetwork_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -313,10 +313,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-JLNetwork_Example/Pods-JLNetwork_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/JLNetwork/JLNetwork.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JLNetwork.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

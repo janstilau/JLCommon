@@ -1,16 +1,37 @@
 PODS:
-  - JLNetwork (0.1.0)
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - JLNetwork (0.2.0):
+    - AFNetworking
 
 DEPENDENCIES:
   - JLNetwork (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
 
 EXTERNAL SOURCES:
   JLNetwork:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JLNetwork: 835297edaddc1de03039eb702b3da9df9c2c8ad8
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  JLNetwork: 8f3964b7cce483e1796d99249f6cf6d2d4da40ff
 
-PODFILE CHECKSUM: be945731c50ef3b547e6116533d87e6b1b81186b
+PODFILE CHECKSUM: 61595b60bf0f8b6a5569954e992b600538fc51d5
 
 COCOAPODS: 1.11.2
